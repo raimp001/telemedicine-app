@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note Writing - Telemedicine App</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="note-writing.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="billing.html">Billing</a></li>
+                <li><a href="note-writing.html">Note Writing</a></li>
+                <li><a href="appointments.html">Appointments</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="note-writing">
+            <h2>Note Writing</h2>
+            <form id="noteForm">
+                <label for="patient-name">Patient Name:</label>
+                <input type="text" id="patient-name" name="patient-name">
+
+                <label for="vitals">Vitals:</label>
+                <textarea id="vitals" name="vitals" readonly></textarea>
+
+                <label for="daily-diary">Daily Diary Entries:</label>
+                <textarea id="daily-diary" name="daily-diary"></textarea>
+
+                <label for="past-medical-history">Past Medical History:</label>
+                <textarea id="past-medical-history" name="past-medical-history"></textarea>
+
+                <label for="past-surgical-history">Past Surgical History:</label>
+                <textarea id="past-surgical-history" name="past-surgical-history"></textarea>
+
+                <label for="family-history">Family History:</label>
+                <textarea id="family-history" name="family-history"></textarea>
+
+                <label for="allergies">Allergies:</label>
+                <textarea id="allergies" name="allergies"></textarea>
+
+                <label for="medications">Medications:</label>
+                <textarea id="medications" name="medications"></textarea>
+
+                <label for="labs">Labs:</label>
+                <textarea id="labs" name="labs"></textarea>
+
+                <label for="lab-trend">Lab Trends:</label>
+                <div id="lab-trend" style="height: 400px;"></div> <!-- Placeholder for chart -->
+
+                <label for="radiology">Radiology:</label>
+                <textarea id="radiology" name="radiology"></textarea>
+
+                <label for="assessment-plan">Assessment and Plan:</label>
+                <textarea id="assessment-plan" name="assessment-plan"></textarea>
+
+                <button type="button" onclick="generateNotes()">Generate Notes</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Telemedicine App. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
